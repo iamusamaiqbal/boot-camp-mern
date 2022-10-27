@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+        }
+        body{
+            font-family: Calibri, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main{
+            width: 60%;
+            background-color: whitesmoke;
+            padding: 3em;
+            
+        }
+        .card{
+            display: flex;
+            justify-self: start;
+            width: 40%;
+            border: 1px solid rgb(222, 216, 216);
+            border-radius: 5px;
+        }
+        .p10{
+            padding: 10px;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+
+        .card-tile{
+            display: flex;
+            justify-content: start;
+        }
+
+
+        p{
+            padding: 0px;
+            font-size: 10;
+            color: gray;
+        }
+
+        img {
+            width: 8em;
+            object-fit: cover;
+        }
+
+        .description{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .row{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+        .header{
+            
+        }
+        .nav-bar{
+            padding-top: 20px;
+            /* padding-bottom: 20px; */
+            border-bottom: 3px solid grey;
+            border-radius: 2px;
+        }
+        .card-vertical{
+            display: flex;
+            flex-direction: column;
+            /* justify-self: start; */
+            width: 30%;
+            height: 300px;
+            border: 1px solid rgb(222, 216, 216);
+            border-radius: 5px;
+        }
+
+        .card-vertical-img{
+            width: 100%;
+            height: 35%;
+            object-fit: cover;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Mediumish</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="nav-bar">
+            <h3>Feature</h3>
+        </div>
+        <div class="row">
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/12687687/pexels-photo-12687687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image" >
+                <div class="description p10">
+                    <h2>We are living some strange times</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, quas itaque alias quis repudiandae nostrum.</p>
+                    <div class="card-tile">
+                        <img class="avatar p10" src="img_avatar.png" alt="Avatar">
+                        <div class="p10">
+                            <h4>Usama</h4>
+                            <p>10/27/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+            
+                <img src="https://images.pexels.com/photos/13905462/pexels-photo-13905462.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="image" >
+                <div class="description p10">
+                    <h2>We are living some strange times</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, quas itaque alias quis repudiandae nostrum.</p>
+                    <div class="card-tile">
+                        <img class="avatar p10" src="img_avatar.png" alt="Avatar">
+                        <div class="p10">
+                            <h4>Usama</h4>
+                            <p>10/27/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div class="row">
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/14078429/pexels-photo-14078429.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="image" >
+                <div class="description p10">
+                    <h2>We are living some strange times</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, quas itaque alias quis repudiandae nostrum.</p>
+                    <div class="card-tile">
+                        <img class="avatar p10" src="img_avatar.png" alt="Avatar">
+                        <div class="p10">
+                            <h4>Usama</h4>
+                            <p>10/27/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+            
+                <img src="https://images.pexels.com/photos/14117833/pexels-photo-14117833.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="image" >
+                <div class="description p10">
+                    <h2>We are living some strange times</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, quas itaque alias quis repudiandae nostrum.</p>
+                    <div class="card-tile">
+                        <img class="avatar p10" src="img_avatar.png" alt="Avatar">
+                        <div class="p10">
+                            <h4>Usama</h4>
+                            <p>10/27/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div class="nav-bar">
+            <h3>All Stories</h3>
+        </div>
+        <div class="row">
+
+            <div class="card-vertical">
+                <img src="https://images.pexels.com/photos/14026383/pexels-photo-14026383.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="image" class="card-vertical-img">
+                <div class="description p10">
+                    <h2>We are living some strange times</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, quas itaque alias quis repudiandae nostrum.</p>
+                    <div class="card-tile">
+                        <img class="avatar p10" src="img_avatar.png" alt="Avatar">
+                        <div class="p10">
+                            <h4>Usama</h4>
+                            <p>10/27/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-vertical">
+                <img src="https://images.pexels.com/photos/10609938/pexels-photo-10609938.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="image" class="card-vertical-img">
+                <div class="description p10">
+                    <h2>We are living some strange times</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, quas itaque alias quis repudiandae nostrum.</p>
+                    <div class="card-tile">
+                        <img class="avatar p10" src="img_avatar.png" alt="Avatar">
+                        <div class="p10">
+                            <h4>Usama</h4>
+                            <p>10/27/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-vertical">
+                <img src="https://images.pexels.com/photos/14168949/pexels-photo-14168949.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="image" class="card-vertical-img">
+                <div class="description p10">
+                    <h2>We are living some strange times</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, quas itaque alias quis repudiandae nostrum.</p>
+                    <div class="card-tile">
+                        <img class="avatar p10" src="img_avatar.png" alt="Avatar">
+                        <div class="p10">
+                            <h4>Usama</h4>
+                            <p>10/27/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div class="row">
+
+            <div class="card-vertical">
+                <img src="https://images.pexels.com/photos/14103314/pexels-photo-14103314.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="image" class="card-vertical-img">
+                <div class="description p10">
+                    <h2>We are living some strange times</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, quas itaque alias quis repudiandae nostrum.</p>
+                    <div class="card-tile">
+                        <img class="avatar p10" src="img_avatar.png" alt="Avatar">
+                        <div class="p10">
+                            <h4>Usama</h4>
+                            <p>10/27/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-vertical">
+                <img src="https://images.pexels.com/photos/14017955/pexels-photo-14017955.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="image" class="card-vertical-img">
+                <div class="description p10">
+                    <h2>We are living some strange times</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, quas itaque alias quis repudiandae nostrum.</p>
+                    <div class="card-tile">
+                        <img class="avatar p10" src="img_avatar.png" alt="Avatar">
+                        <div class="p10">
+                            <h4>Usama</h4>
+                            <p>10/27/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-vertical">
+                <img src="https://images.pexels.com/photos/10465780/pexels-photo-10465780.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="image" class="card-vertical-img">
+                <div class="description p10">
+                    <h2>We are living some strange times</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, quas itaque alias quis repudiandae nostrum.</p>
+                    <div class="card-tile">
+                        <img class="avatar p10" src="img_avatar.png" alt="Avatar">
+                        <div class="p10">
+                            <h4>Usama</h4>
+                            <p>10/27/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+</body>
+</html>
