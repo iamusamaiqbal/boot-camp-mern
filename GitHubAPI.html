@@ -17,6 +17,13 @@
         body {
             font-family: Calibri, sans-serif;
         }
+
+        .absolutePosition {
+            position: absolute;
+            top: 160px;
+            right: 160px;
+        }
+        
     </style>
 </head>
 
@@ -35,16 +42,18 @@
                     <button type="button" onclick="fetchData()" class="btn btn-primary mb-3">Submit</button> -->
 
                     <div class="card" style="border-radius: 15px;">
-                        <div class="card-body text-center">
-                            <div class="mt-3 mb-4">
+                        <div class="card-body text-center p-0">
+                            <img id="backPfp"src="http://i.imgur.com/woUbg3p.jpg"
+                                    class="card-img p-0 m-0"/>
+                            <div class="mt-3 mb-4 absolutePosition">
                                 <img id="pfp"
                                     src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
                                     class="rounded-circle img-fluid" style="width: 100px;" />
                             </div>
-                            <h4 id="username" class="mb-2">Username</h4>
+                            <h4 id="username" class="mb-2 mt-5">Username</h4>
                             <p id="bio" class="text-muted mb-4">Programmer</p>
 
-                            <a id="pfpLink" href="" type="button" class="btn btn-primary btn-rounded btn-lg">
+                            <a id="pfpLink" href="" type="button" class="btn btn-primary btn-rounded btn-lg mb-3">
                                 Visit Profile
                             </a>
                             
