@@ -25,14 +25,14 @@
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-md-12 col-xl-4">
-
+<!-- 
                     <div class="mb-3">
                         <label class="form-label">Enter GitNub ID</label>
                         <input type="text" class="form-control" id="enteredUsername" aria-describedby="emailHelp">
                         <p id="er" class="form-text"> </p>
                     </div>
 
-                    <button type="button" onclick="fetchData()" class="btn btn-primary mb-3">Submit</button>
+                    <button type="button" onclick="fetchData()" class="btn btn-primary mb-3">Submit</button> -->
 
                     <div class="card" style="border-radius: 15px;">
                         <div class="card-body text-center">
@@ -47,20 +47,7 @@
                             <a id="pfpLink" href="" type="button" class="btn btn-primary btn-rounded btn-lg">
                                 Visit Profile
                             </a>
-                            <!-- <div class="d-flex justify-content-between text-center mt-5 mb-2">
-                                <div>
-                                    <p class="mb-2 h5">8471</p>
-                                    <p class="text-muted mb-0">Wallets Balance</p>
-                                </div>
-                                <div class="px-3">
-                                    <p class="mb-2 h5">8512</p>
-                                    <p class="text-muted mb-0">Income amounts</p>
-                                </div>
-                                <div>
-                                    <p class="mb-2 h5">4751</p>
-                                    <p class="text-muted mb-0">Total Transactions</p>
-                                </div>
-                            </div> -->
+                            
                         </div>
                     </div>
 
@@ -69,35 +56,35 @@
         </div>
     </section>
     <script>
-        // fetchData();
+        fetchData();
 
         var pfp = document.getElementById("pfp");
         var username = document.getElementById("username");
         var bio = document.getElementById("bio");
         var pfpLink = document.getElementById("pfpLink");
-        var er = document.getElementById("er");
-        var enteredUsername = document.getElementById("enteredUsername");
+        // var er = document.getElementById("er");
+        // var enteredUsername = document.getElementById("enteredUsername");
 
 
 
         function fetchData() {
 
-            console.log(enteredUsername.value);
-            if (enteredUsername.value === "") {
-                er.innerHTML = "Username is Empty"
-                return;
-            }
-            er.innerHTML = "wait..."
-            var data = fetch('https://api.github.com/users/' + enteredUsername.value, {
+            // console.log(enteredUsername.value);
+            // if (enteredUsername.value === "") {
+            //     er.innerHTML = "Username is Empty"
+            //     return;
+            // }
+            // er.innerHTML = "wait..."
+            var data = fetch('https://api.github.com/users/iamusamaiqbal', {
                 method: "GET",
                 headers: { "Content-type": "application/json;charset=UTF-8" }
             })
                 .then(response => response.json())
-                .then(json => { return json }).catch(err => er.innerText = err);
+                .then(json => { return json }).catch(err => console.log(err));
 
             data.then((data) => {
                 console.log(data);
-                er.innerHTML = "Done"
+                // er.innerHTML = "Done"
                 pfp.src = data["avatar_url"]
                 username.innerHTML = data["name"]
                 bio.innerText = data["bio"]
